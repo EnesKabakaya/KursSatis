@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çevrimiçi Eğitim - Kurslarımız Sayfası</title>
+    <meta name="description" content="Yazılım öğrenmek isteyen öğrencilere özel kurslar">
+    <meta name="keywords" content="Kurs Yazılım Eğitim Öğrenmek">
+    <meta name="author" content="Enes Kabakaya">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/course.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css'
+        integrity='sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ=='
+        crossorigin='anonymous' />
+</head>
+<style>
+    body {
+        background-image: url("./images/bg-texture.png");
+    }
+</style>
+
+<body>
+    <section class="cookies">
+        <div class="cookie-container">
+            <div class="cookie-info">
+                <h1 style="margin-top: 10px;">Çerez Kullanımı</h1>
+                <p style="margin-top: 20px;">
+                    Size mümkün olan en iyi çevrimiçi deneyimi sunabilmek ve sunulan içeriği ilgi alanlarınıza göre
+                    düzenlemek için çerezler kullanırız (üçüncü taraf çerezler dahil). “TÜMÜNÜ KABUL ET” üzerine
+                    tıklayarak
+                    toplanan ve okunan verilerin daha ileri seviyede işlenmesini kabul edersiniz.
+                    Çerezlerin kullanımı ve yönetimi hakkında daha fazla bilgi için “TERCİHLERİ ÖZELLEŞTİR” üzerine
+                    tıklayın. TÜMÜNÜ REDDET üzerine tıklayarak, onay gerektiren çerezlerin kullanılmasını reddedersiniz.
+                    Çerez Politikamız hakkında detaylı bilgi almak için bu sayfayı inceleyebilirsiniz.
+                </p>
+            </div>
+            <div class="cookie-button">
+                <button type="button" id="cookie-accept-btn">Kabul Et</button>
+                <button type="button" id="cookie-decline-btn">Reddet</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="login-page">
+        <div class="login-container">
+            <div class="close">
+                <i class="fa-solid fa-xmark" id="login-close-btn"></i>
+            </div>
+            <form action="">
+                <h2>Giriş Yap</h2>
+                <div class="input-box" style="margin-bottom: 35px;">
+                    <label>Mail Adresi</label>
+                    <input type="email" name="" placeholder="Mail Adresinizi Giriniz">
+                </div>
+                <div class="input-box">
+                    <label>Şifreniz</label>
+                    <input type="password" name="" placeholder="Şifrenizi Giriniz">
+                </div>
+                <div class="input-box">
+                    <button type="button" class="button">Giriş Yap</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="signup-page">
+        <div class="signup-container">
+            <div class="close">
+                <i class="fa-solid fa-xmark" id="signup-close-btn"></i>
+            </div>
+            <form action="">
+                <h2>Kayıt Ol</h2>
+                <div class="input-box">
+                    <label>Adınız</label>
+                    <input type="text" name="" placeholder="Adınızı Giriniz">
+                </div>
+                <div class="input-box">
+                    <label>Soyadınız</label>
+                    <input type="text" name="" placeholder="Soyadınızı Giriniz">
+                </div>
+                <div class="input-box">
+                    <label>Mail Adresiniz</label>
+                    <input type="email" name="" placeholder="Mail Adresinizi Giriniz">
+                </div>
+                <div class="input-box">
+                    <label>Şifreniz</label>
+                    <input type="password" name="" placeholder="Şifrenizi Girinizz">
+                </div>
+                <div class="input-box">
+                    <button type="button" class="button">Kayıt Ol</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <h2>Çevrimiçi Eğitim</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">AnaSayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="course.html">Kurslar</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                    <li style="display: flex; gap: 1rem;" class="account">
+                        <button class="login">Giriş Yap</button>
+                        <button class="signup">Kayıt Ol</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="course" style="margin-top: 7rem;">
+        <h2>Bütün Kurslarımız</h2>
+        <div class="course-container">
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course1.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Telefonlara ,Tabletlere Duyarlı Site Yönetim Paneli Geliştirme</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course2.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Telefonlara ,Tabletlere Duyarlı Ürün Sayfaları Geliştirme</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course3.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Telefonlara ,Tabletlere Duyarlı WebSitesi Geliştirme</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course4.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Html ve Css İşaretleme Dillerini Proje Geliştirirek Ögrenin</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course5.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Telefonlara ,Tabletlere Duyarlı Ürün Sayfaları Geliştirme</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course6.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Telefonlara ,Tabletlere Duyarlı Site Yönetim Paneli Geliştirme</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course7.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>İşletmelere Uygun Ürün Sayfaları Oluşturma</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course8.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Kişilere Özgün Kişisel Blog Sayfaları Geliştirme</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course9.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Html ,Css ,Js Kullanarak Film Sitesi Oluşturma</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course10.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Kişilere Özgün Duyarlı Kişisel Blog Sayfaları Geliştirme</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course11.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Kişilere Özgün Duyarlı Kişisel Blog Sayfaları Geliştirme</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course12.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Google Sayfasını Html ,Css ,Js Kullanarak Oluşturma</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course13.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Html ,Css ,Js Kullanarak Duyarlı WebSitesi Oluşturma</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course14.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Sadece Html-Css-Js Kullanarak Mail Gönderme Formu</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course15.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>İşletmeler Uygun Ürünleri İçin Ürün Satış Sayfaları Oluşturun</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course16.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Html ,Css ,Js Kullanarak Duyarlı WebSitesi Oluşturma</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course17.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Telefonlara ,Tabletlere Duyarlı Site Yönetim Paneli Geliştirme</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course18.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Html ,Css ,Js Kullanarak Telefonlara Uygulama Geliştirme</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="#" class="button">Kurslar Hakkında Bilgi Edinin</a>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-1">
+                <h2>Çevrimiçi Eğitim</h2>
+                <p style="width: 23ch;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nulla
+                    dolor culpa.</p>
+            </div>
+            <div class="footer-2">
+                <h2>Sayfalar</h2>
+                <ul>
+                    <li><a href="index.html">AnaSayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="course.html">Kurslarımız</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-3">
+                <h2>Sözleşmeler</h2>
+                <ul>
+                    <li>Gizlilik Politikası</li>
+                    <li>Şartlar ve Koşullar</li>
+                    <li>Geri Ödeme Politikası</li>
+                </ul>
+            </div>
+            <div class="footer-4">
+                <h2>İletişim Bilgileri</h2>
+                <ul>
+                    <li><a href="tel:+90 555 555 55 55">+90 555 555 55 55</a></li>
+                    <li><a href="mailto:deneme@gmail.com">deneme@gmail.com</a></li>
+                </ul>
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Enes Kabakaya</p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

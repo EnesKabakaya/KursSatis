@@ -1,0 +1,62 @@
+.course {
+    margin-top: 10rem;
+    padding: 5rem 0;
+}
+
+.course .course-container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 3rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.course .course-container .course-card .course-info {
+    padding: 2rem;
+}
+
+.course .course-container .course-card .button {
+    display: inline-flex;
+    background-color: var(--color-danger);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.course .course-container .course-card .button:hover {
+    border: 1px solid var(--color-white);
+    background-color: transparent;
+}
+
+
+.course .course-container .course-card .course-info p {
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.course .course-container .course-card .course-info h4 {
+    text-align: center;
+}
+
+.course .course-container .course-card .course-img img {
+    width: 100%;
+}
+
+.course .course-container .course-card a {
+    margin-bottom: 2rem;
+}
+
+.course .course-container .course-card {
+    background-color: var(--color-bg1);
+    border: 2px solid transparent;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.course .course-container .course-card:hover {
+    background-color: transparent;
+    border: 2px solid var(--color-bg1)
+}

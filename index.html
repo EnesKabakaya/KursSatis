@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çevrimiçi Eğitim - AnaSayfa</title>
+    <meta name="description" content="Yazılım öğrenmek isteyen öğrencilere özel kurslar">
+    <meta name="keywords" content="Kurs Yazılım Eğitim Öğrenmek">
+    <meta name="author" content="Enes Kabakaya">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/homePage.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css'
+        integrity='sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ=='
+        crossorigin='anonymous' />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<style>
+    body {
+        background-image: url("./images/bg-texture.png");
+    }
+</style>
+
+<body id="page-start">
+    <section class="return-page">
+        <div class="return-icon">
+            <a href="#page-start"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </section>
+    <section class="login-page">
+        <div class="login-container">
+            <div class="close">
+                <i class="fa-solid fa-xmark" id="login-close-btn"></i>
+            </div>
+            <form action="">
+                <h2>Giriş Yap</h2>
+                <div class="input-box" style="margin-bottom: 35px;">
+                    <label>Mail Adresi</label>
+                    <input type="email" name="" placeholder="Mail Adresinizi Giriniz">
+                </div>
+                <div class="input-box">
+                    <label>Şifreniz</label>
+                    <input type="password" name="" placeholder="Şifrenizi Giriniz">
+                </div>
+                <div class="input-box">
+                    <button type="button" class="button">Giriş Yap</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="signup-page">
+        <div class="signup-container">
+            <div class="close">
+                <i class="fa-solid fa-xmark" id="signup-close-btn"></i>
+            </div>
+            <form action="">
+                <h2>Kayıt Ol</h2>
+                <div class="input-box">
+                    <label>Adınız</label>
+                    <input type="text" name="" placeholder="Adınızı Giriniz">
+                </div>
+                <div class="input-box">
+                    <label>Soyadınız</label>
+                    <input type="text" name="" placeholder="Soyadınızı Giriniz">
+                </div>
+                <div class="input-box">
+                    <label>Mail Adresiniz</label>
+                    <input type="email" name="" placeholder="Mail Adresinizi Giriniz">
+                </div>
+                <div class="input-box">
+                    <label>Şifreniz</label>
+                    <input type="password" name="" placeholder="Şifrenizi Girinizz">
+                </div>
+                <div class="input-box">
+                    <button type="button" class="button">Kayıt Ol</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="cookies">
+        <div class="cookie-container">
+            <div class="cookie-info">
+                <h1 style="margin-top: 10px;">Çerez Kullanımı</h1>
+                <p style="margin-top: 20px;">
+                    Size mümkün olan en iyi çevrimiçi deneyimi sunabilmek ve sunulan içeriği ilgi alanlarınıza göre
+                    düzenlemek için çerezler kullanırız (üçüncü taraf çerezler dahil). “TÜMÜNÜ KABUL ET” üzerine
+                    tıklayarak
+                    toplanan ve okunan verilerin daha ileri seviyede işlenmesini kabul edersiniz.
+                    Çerezlerin kullanımı ve yönetimi hakkında daha fazla bilgi için “TERCİHLERİ ÖZELLEŞTİR” üzerine
+                    tıklayın. TÜMÜNÜ REDDET üzerine tıklayarak, onay gerektiren çerezlerin kullanılmasını reddedersiniz.
+                    Çerez Politikamız hakkında detaylı bilgi almak için bu sayfayı inceleyebilirsiniz.
+                </p>
+            </div>
+            <div class="cookie-button">
+                <button type="button" id="cookie-accept-btn">Kabul Et</button>
+                <button type="button" id="cookie-decline-btn">Reddet</button>
+            </div>
+        </div>
+    </section>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <h2>Çevrimiçi Eğitim</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">AnaSayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="course.html">Kurslar</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                    <li class="account">
+                        <button class="login">Giriş Yap</button>
+                        <button class="signup">Kayıt Ol</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <h2>Kariyer yolunuzu ilerletmek için becerilerinizi geliştirin</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur consequuntur quod omnis,
+                    reprehenderit eum tempora sequi doloribus unde eius hic.</p>
+                <a href="course.html" class="button">Hadi Başlayalım</a>
+            </div>
+            <div class="header-right">
+                <img src="./images/svg/header.svg" alt="header">
+            </div>
+        </div>
+    </header>
+    <section class="category">
+        <div class="category-container">
+            <div class="category-left">
+                <h1>Kategoriler</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eligendi dolorum, rem cumque pariatur
+                    possimus facilis perspiciatis incidunt iusto voluptatum.</p>
+                <a href="#" class="button">Bilgi Edinin</a>
+            </div>
+            <div class="category-right">
+                <article class="category-box">
+                    <span class="category-icon"><i class="fa-brands fa-bitcoin"></i></span>
+                    <h5>Blockchain</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quae.</p>
+                </article>
+                <article class="category-box">
+                    <span class="category-icon"><i class="fa-solid fa-palette"></i></span>
+                    <h5>Grafik Tasarım</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quae.</p>
+                </article>
+                <article class="category-box">
+                    <span class="category-icon"><i class="fa-solid fa-coins"></i></span>
+                    <h5>Finans</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quae.</p>
+                </article>
+                <article class="category-box category-hover">
+                    <span class="category-icon"><i class="fa-solid fa-chart-simple"></i></span>
+                    <h5>Pazarlama</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quae.</p>
+                </article>
+                <article class="category-box category-hover">
+                    <span class="category-icon"><i class="fa-solid fa-music"></i></span>
+                    <h5>Müzik</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quae.</p>
+                </article>
+                <article class="category-box category-hover">
+                    <span class="category-icon"><i class="fa-brands fa-uncharted"></i></span>
+                    <h5>Yazılım</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quae.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="course">
+        <h2>Popüler Kurslarımız</h2>
+        <div class="course-container">
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course14.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Sadece Html-Css-Js Kullanarak Mail Gönderme Formu</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="course.html" class="button">Kurs Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course15.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>İşletmeler Uygun Ürünleri İçin Ürün Satış Sayfaları Oluşturun</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="course.html" class="button">Kurs Hakkında Bilgi Edinin</a>
+            </article>
+            <article class="course-card">
+                <div class="course-img">
+                    <img src="./images/course6.webp" alt="" loading="lazy">
+                </div>
+                <div class="course-info">
+                    <h4>Telefonlara ,Tabletlere Duyarlı WebSitesi Geliştirme</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo id veniam dolorem porro iste illo
+                        reiciendis.
+                    </p>
+                </div>
+                <a href="course.html" class="button">Kurs Hakkında Bilgi Edinin</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="frequent">
+        <h2>Sıkça Sorulan Sorular</h2>
+        <div class="frequent-container">
+            <div class="frequent-card">
+                <div class="frequent-icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="frequent-question">
+                    <h4>Benim için doğru olan kursları nasıl öğrenebilirim?</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati vel nulla alias
+                        animi, inventore illo! Odit eius, a repellendus et nisi aut nobis fugit doloremque dolor earum!
+                        Officia, fugiat?
+                    </p>
+                </div>
+            </div>
+            <article class="frequent-card">
+                <div class="frequent-icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="frequent-question">
+                    <h4>Bütün kurslardan Sertifika alabiliyormuyuz?</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati vel nulla alias
+                        animi, inventore illo! Odit eius, a repellendus et nisi aut nobis fugit doloremque dolor earum!
+                        Officia, fugiat?
+                    </p>
+                </div>
+            </article>
+            <article class="frequent-card">
+                <div class="frequent-icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="frequent-question">
+                    <h4>Eğer kursunuzdan birşey öğrenemezsem paramı geri alabiliyormuyum?</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati vel nulla alias
+                        animi, inventore illo! Odit eius, a repellendus et nisi aut nobis fugit doloremque dolor earum!
+                        Officia, fugiat?
+                    </p>
+                </div>
+            </article>
+            <article class="frequent-card">
+                <div class="frequent-icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="frequent-question">
+                    <h4>Kursa bir kere para verdikten sonra hayatım boyunca sahip oluyormuyum?</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati vel nulla alias
+                        animi, inventore illo! Odit eius, a repellendus et nisi aut nobis fugit doloremque dolor earum!
+                        Officia, fugiat?
+                    </p>
+                </div>
+            </article>
+            <article class="frequent-card">
+                <div class="frequent-icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="frequent-question">
+                    <h4>Kursu bitirdikten sonra işe başlayacakmıyım?</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati vel nulla alias
+                        animi, inventore illo! Odit eius, a repellendus et nisi aut nobis fugit doloremque dolor earum!
+                        Officia, fugiat?
+                    </p>
+                </div>
+            </article>
+            <article class="frequent-card">
+                <div class="frequent-icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="frequent-question">
+                    <h4>Ödeme seçenekleri nedir?</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati vel nulla alias
+                        animi, inventore illo! Odit eius, a repellendus et nisi aut nobis fugit doloremque dolor earum!
+                        Officia, fugiat?
+                    </p>
+                </div>
+            </article>
+            <article class="frequent-card">
+                <div class="frequent-icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="frequent-question">
+                    <h4>Kursa başlamak için gerekli olan gerksinimler nelerdir?</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati vel nulla alias
+                        animi, inventore illo! Odit eius, a repellendus et nisi aut nobis fugit doloremque dolor earum!
+                        Officia, fugiat?
+                    </p>
+                </div>
+            </article>
+            <article class="frequent-card">
+                <div class="frequent-icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="frequent-question">
+                    <h4>Derslerde anlamadığım yerleri birine sorabilecekmiyim?</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati vel nulla alias
+                        animi, inventore illo! Odit eius, a repellendus et nisi aut nobis fugit doloremque dolor earum!
+                        Officia, fugiat?
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="testimonial-container mySwiper">
+        <h2>Öğrenci Görüşleri</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial-box swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar1.webp" alt="" loading="lazy">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Selma Öztürk</h5>
+                    <small>Öğrenci</small>
+                </div>
+                <div class="testimonial-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit similique fugit inventore
+                    libero et, veritatis amet rerum mollitia explicabo?
+                </div>
+            </article>
+            <article class="testimonial-box swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar2.webp" alt="" loading="lazy">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Kemal Sayın</h5>
+                    <small>Öğrenci</small>
+                </div>
+                <div class="testimonial-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit similique fugit inventore
+                    libero et, veritatis amet rerum mollitia explicabo?
+                </div>
+            </article>
+            <article class="testimonial-box swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar3.webp" alt="" loading="lazy">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Mahmut Taş</h5>
+                    <small>Öğrenci</small>
+                </div>
+                <div class="testimonial-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit similique fugit inventore
+                    libero et, veritatis amet rerum mollitia explicabo?
+                </div>
+            </article>
+            <article class="testimonial-box swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar4.webp" alt="" loading="lazy">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Rabia Koyun</h5>
+                    <small>Öğrenci</small>
+                </div>
+                <div class="testimonial-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit similique fugit inventore
+                    libero et, veritatis amet rerum mollitia explicabo?
+                </div>
+            </article>
+            <article class="testimonial-box swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar5.webp" alt="" loading="lazy">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Buse Can</h5>
+                    <small>Öğrenci</small>
+                </div>
+                <div class="testimonial-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit similique fugit inventore
+                    libero et, veritatis amet rerum mollitia explicabo?
+                </div>
+            </article>
+            <article class="testimonial-box swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar6.webp" alt="" loading="lazy">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Selcan Öztürk</h5>
+                    <small>Öğrenci</small>
+                </div>
+                <div class="testimonial-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit similique fugit inventore
+                    libero et, veritatis amet rerum mollitia explicabo?
+                </div>
+            </article>
+            <article class="testimonial-box swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar7.webp" alt="" loading="lazy">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Zehra Kılıç</h5>
+                    <small>Öğrenci</small>
+                </div>
+                <div class="testimonial-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit similique fugit inventore
+                    libero et, veritatis amet rerum mollitia explicabo?
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-1">
+                <h2>Çevrimiçi Eğitim</h2>
+                <p style="width: 23ch;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nulla
+                    dolor culpa.</p>
+            </div>
+            <div class="footer-2">
+                <h2>Sayfalar</h2>
+                <ul>
+                    <li><a href="index.html">AnaSayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="course.html">Kurslarımız</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-3">
+                <h2>Sözleşmeler</h2>
+                <ul>
+                    <li>Gizlilik Politikası</li>
+                    <li>Şartlar ve Koşullar</li>
+                    <li>Geri Ödeme Politikası</li>
+                </ul>
+            </div>
+            <div class="footer-4">
+                <h2>İletişim Bilgileri</h2>
+                <ul>
+                    <li><a href="tel:+90 555 555 55 55">+90 555 555 55 55</a></li>
+                    <li><a href="mailto:deneme@gmail.com">deneme@gmail.com</a></li>
+                </ul>
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Enes Kabakaya</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "1",
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
