@@ -31,7 +31,7 @@ Herhangi bir geri bildiriminiz varsa, lütfen enes.kabakaya@gmail.com adresinden
   
 ## Ekran Görüntüleri
 
-![Uygulama Ekran Görüntüsü](C:\Users\EnesKabakaya\OneDrive\Masaüstü\1.png)
+![Uygulama Ekran Görüntüsü](./1.png)
 
 ![Uygulama Ekran Görüntüsü](C:\Users\EnesKabakaya\OneDrive\Masaüstü\1.png)
   
