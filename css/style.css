@@ -53,14 +53,14 @@ html {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.navbar .navbar-container .menu .account {
+.navbar .navbar-container .navbar-menu .account {
     display: flex;
     gap: 0.90rem;
     width: fit-content;
 }
 
-.navbar .menu .account .login.account-btn,
-.navbar .menu .account .signup.account-btn {
+.navbar .navbar-menu .account .login.account-btn,
+.navbar .navbar-menu .account .signup.account-btn {
     background-color: var(--color-bg2);
 }
 
@@ -119,15 +119,15 @@ img {
     margin: 0 auto;
 }
 
-.navbar .menu ul {
+.navbar .navbar-menu ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
 }
 
-.navbar .menu ul li .login,
-.navbar .menu ul li .signup {
+.navbar .navbar-menu ul li .login,
+.navbar .navbar-menu ul li .signup {
     max-width: 500px;
     max-height: 500px;
     width: 100px;
@@ -141,8 +141,8 @@ img {
     text-align: center;
 }
 
-.navbar .menu ul li .login:hover,
-.navbar .menu ul li .signup:hover {
+.navbar .navbar-menu ul li .login:hover,
+.navbar .navbar-menu ul li .signup:hover {
     background-color: var(--color-bg2);
     color: var(--color-primary);
 }
@@ -341,12 +341,12 @@ img {
     font-size: 1rem;
 }
 
-.navbar .menu ul li a {
+.navbar .navbar-menu ul li a {
     font-size: 1rem;
     transition: var(--transition);
 }
 
-.navbar .menu ul li a:hover {
+.navbar .navbar-menu     ul li a:hover {
     color: var(--color-bg2);
 }
 

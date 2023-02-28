@@ -6,16 +6,15 @@
 
 .contact-container {
     background-color: var(--color-bg1);
-    display: grid;
-    grid-template-columns: 40% 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 3rem;
-    gap: 4rem;
     height: 30rem;
     margin: 7rem auto;
     border-radius: 1rem;
     width: 80%;
 }
-
 
 .contact-container .contact-info {
     background-color: var(--color-primary);
@@ -24,7 +23,6 @@
     width: 400px;
     border-radius: 1rem;
     position: relative;
-    bottom: 10rem;
 }
 
 .contact-container .contact-info h2 {
@@ -96,28 +94,11 @@
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    margin: 1rem auto;
+    width: 700px;
     padding: 0 3rem;
 }
 
-.contact-form .contact-name {
-    display: flex;
-    width: 100%;
-    gap: 1rem;
-    margin: 0 1rem 1rem 0;
-
-}
-
-.contact-form .contact-name input {
-    width: 50%;
-    padding: 1rem;
-    background-color: var(--color-bg);
-    color: var(--color-white);
-    font-size: 1rem;
-}
-
-.contact-form input[type="email"] {
+.contact-form input {
     width: 100%;
     padding: 1rem;
     background-color: var(--color-bg);
