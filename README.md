@@ -31,9 +31,9 @@ Herhangi bir geri bildiriminiz varsa, lütfen enes.kabakaya@gmail.com adresinden
   
 ## Ekran Görüntüleri
 
-![Uygulama Ekran Görüntüsü](./1.png)
+![1](https://user-images.githubusercontent.com/111273735/221970466-5eeedd81-3779-45a7-9780-a2eedbf3b700.png)
 
-![Uygulama Ekran Görüntüsü](C:\Users\EnesKabakaya\OneDrive\Masaüstü\1.png)
+![2](https://user-images.githubusercontent.com/111273735/221971733-0819961d-678e-4d52-8e21-0c1400b473a1.png)
   
 ## Lisans
 
