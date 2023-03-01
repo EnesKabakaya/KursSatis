@@ -3,6 +3,10 @@
     padding: 5rem 0;
 }
 
+.about .about-container .about-left img {
+    width: 500px;
+}
+
 .about .about-container {
     display: flex;
     justify-content: center;
@@ -60,6 +64,11 @@
     padding: 5rem 0;
 }
 
+.team h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 .team .team-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -79,6 +88,7 @@
 
 .team .team-container .team-member .team-image img {
     filter: saturate(0);
+    width: 100%;
 }
 
 .team .team-container .team-member .team-info {

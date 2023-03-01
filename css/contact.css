@@ -4,7 +4,7 @@
     padding: 5rem 0;
 }
 
-.contact-container {
+.contact .contact-container {
     background-color: var(--color-bg1);
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@
     width: 80%;
 }
 
-.contact-container .contact-info {
+.contact .contact-container .contact-info {
     background-color: var(--color-primary);
     padding: 3rem;
     text-align: center;
@@ -25,16 +25,20 @@
     position: relative;
 }
 
-.contact-container .contact-info h2 {
+.contact .contact-container .contact-info h2 {
     text-align: left;
     margin-bottom: 1rem;
 }
 
-.contact-container .contact-info .contact-text {
+.contact .contact-container .contact-info .contact-img img {
+    width: 100%;
+}
+
+.contact .contact-container .contact-info .contact-text {
     text-align: left;
 }
 
-.contact-container .contact-info ul {
+.contact .contact-container .contact-info ul {
     margin-top: 2rem;
     display: flex;
     justify-content: flex-start;
@@ -42,22 +46,26 @@
     flex-direction: column;
 }
 
-.contact-container .contact-info ul li {
+.contact .contact-container .contact-info ul li {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
 }
 
-.contact-container .contact-info ul li i {
+.contact .contact-container .contact-info ul li a {
+    color: var(--color-white);
+}
+
+.contact contact-container .contact-info ul li i {
     margin-right: 1rem;
 }
 
-.contact-container .contact-info ul .contact-social {
+.contact .contact-container .contact-info ul .contact-social {
     margin-top: 2rem;
 }
 
-.contact-container .contact-info ul .contact-social a {
+.contact .contact-container .contact-info ul .contact-social a {
     margin-top: 2rem;
     background-color: var(--color-bg1);
     border-radius: 50%;
@@ -69,36 +77,36 @@
     border: 0.2rem solid var(--color-bg1);
 }
 
-.contact-container .contact-info ul .contact-social a:hover {
+.contact .contact-container .contact-info ul .contact-social a:hover {
     background-color: var(--color-primary);
     border: 0.2rem solid var(--color-bg1);
     transform: scale(1.2);
 }
 
-.contact-container .contact-info ul .contact-social a i {
+.contact .contact-container .contact-info ul .contact-social a i {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.contact-container .contact-info .contact-img {
+.contact .contact-container .contact-info .contact-img {
     width: 12rem;
     margin-bottom: 2rem;
 }
 
-.contact .contact-container .contact-info .contact-details li a:hover {
+.contact .contact .contact-container .contact-info .contact-details li a:hover {
     text-decoration: underline;
 }
 
-.contact-form {
+.contact .contact-container .contact-form {
     display: flex;
     flex-direction: column;
     width: 700px;
     padding: 0 3rem;
 }
 
-.contact-form input {
+.contact .contact-container .contact-form input {
     width: 100%;
     padding: 1rem;
     background-color: var(--color-bg);
@@ -107,7 +115,7 @@
     font-size: 1rem;
 }
 
-.contact-form textarea {
+.contact .contact-container .contact-form textarea {
     width: 100%;
     padding: 1rem;
     background-color: var(--color-bg);
@@ -117,7 +125,7 @@
     resize: none;
 }
 
-.contact-form .button {
+.contact .contact-container .contact-form .button {
     border: 1px solid transparent;
     padding: 1rem 2rem;
     background-color: var(--color-danger);
@@ -128,7 +136,7 @@
     transition: var(--transition);
 }
 
-.contact-form .button:hover {
+.contact .contact-container .contact-form .button:hover {
     border: 1px solid var(--color-white);
     background-color: transparent;
 }

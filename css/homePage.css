@@ -148,6 +148,11 @@
     padding: 5rem 0;
 }
 
+.course h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 .course .course-container {
     display: flex;
     gap: 3rem;
@@ -213,6 +218,11 @@
     padding: 5rem 0;
 }
 
+.frequent h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 .frequent .frequent-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -255,7 +265,7 @@
     margin-top: 0.5rem;
 }
 
-.testimonial-container {
+.testimonial {
     overflow-x: hidden;
     position: relative;
     margin-bottom: 5rem;
@@ -264,11 +274,16 @@
     padding: 5rem 0;
 }
 
-.testimonial-container .testimonial-box {
+.testimonial h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.testimonial .testimonial-container .testimonial-box {
     padding-top: 2rem;
 }
 
-.testimonial-container .testimonial-box .avatar {
+.testimonial .testimonial-container .testimonial-box .testimonial-person {
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
@@ -277,19 +292,23 @@
     border: 1rem solid var(--color-bg1);
 }
 
-.testimonial-container .testimonial-box .testimonial-info,
+.testimonial .testimonial-container .testimonial-box .testimonial-person img {
+    width: 100%;
+}
+
+.testimonial .testimonial-container .testimonial-box .testimonial-info,
 .testimonial-body {
     text-align: center;
 }
 
-.testimonial-container .testimonial-box .testimonial-body {
+.testimonial .testimonial-container .testimonial-box .testimonial-body {
     background-color: var(--color-primary);
     padding: 2rem;
     margin-top: 3rem;
     position: relative;
 }
 
-.testimonial-container .testimonial-box .testimonial-body::before {
+.testimonial .testimonial-container .testimonial-box .testimonial-body::before {
     content: "";
     width: 3rem;
     height: 3rem;

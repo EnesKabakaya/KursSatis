@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 * {
     margin: 0;
@@ -8,13 +8,6 @@
     text-decoration: none;
     border: none;
     outline: none;
-}
-
-body {
-    font-family: "Montserrat", sans-serif;
-    line-height: 1.7;
-    color: var(--color-white);
-    background-color: var(--color-bg);
 }
 
 :root {
@@ -30,6 +23,14 @@ body {
     --color-bg1: #2e3267;
     --color-bg2: #424890;
     --transition: all 400ms ease;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    background-color: var(--color-bg);
+    background-image: url(../images/bg-texture.png);
 }
 
 html {
@@ -53,51 +54,9 @@ html {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.navbar .navbar-container .navbar-menu .account {
-    display: flex;
-    gap: 0.90rem;
-    width: fit-content;
-}
-
 .navbar .navbar-menu .account .login.account-btn,
 .navbar .navbar-menu .account .signup.account-btn {
     background-color: var(--color-bg2);
-}
-
-section h2 {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-a {
-    color: var(--color-white);
-}
-
-img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-.return-page.return-page-active {
-    right: 50px;
-}
-
-.return-page {
-    transition: var(--transition);
-    background-color: #415292;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 50px;
-    right: -50px;
-    font-size: 25px;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    box-shadow: 0px 0px 87px 35px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
 }
 
 .navbar {
@@ -126,6 +85,22 @@ img {
     gap: 2rem;
 }
 
+.navbar .navbar-menu ul li a {
+    font-size: 1rem;
+    transition: var(--transition);
+    color: var(--color-white);
+}
+
+.navbar .navbar-menu ul li a:hover {
+    color: var(--color-bg2);
+}
+
+.navbar .navbar-container .navbar-menu .account {
+    display: flex;
+    gap: 0.90rem;
+    width: fit-content;
+}
+
 .navbar .navbar-menu ul li .login,
 .navbar .navbar-menu ul li .signup {
     max-width: 500px;
@@ -147,6 +122,77 @@ img {
     color: var(--color-primary);
 }
 
+.footer {
+    background-color: var(--color-bg1);
+    padding-top: 5rem;
+}
+
+.footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer .footer-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer .footer-container ul li {
+    margin-bottom: 0.7rem;
+}
+
+.footer .footer-container ul li a {
+    color: var(--color-white);
+}
+
+.footer .footer-container ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-container .footer-4 .footer-social ul {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.7rem;
+    font-size: 1rem;
+}
+
+.return-page {
+    transition: var(--transition);
+    background-color: #415292;
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right: -50px;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 87px 35px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.return-page .return-icon a {
+    color: var(--color-white);
+}
+
+.return-page.return-page-active {
+    right: 50px;
+}
+
 .cookies {
     height: 30vh;
     width: 100%;
@@ -160,9 +206,6 @@ img {
     justify-content: center;
 }
 
-.cookies.cookie-active {
-    display: flex;
-}
 
 .cookies .cookie-container {
     height: 100%;
@@ -171,6 +214,10 @@ img {
     justify-content: space-around;
     padding: 0 50px;
     flex-direction: column;
+}
+
+.cookies .cookie-container .cookie-info h1 {
+    margin-bottom: 20px;
 }
 
 .cookies .cookie-container .cookie-button {
@@ -197,12 +244,8 @@ img {
     color: var(--color-white);
 }
 
-.login-page .close {
-    position: absolute;
-    top: 0px;
-    right: 10px;
-    font-size: 1.4rem;
-    cursor: pointer;
+.cookies.cookie-active {
+    display: flex;
 }
 
 .login-page {
@@ -219,8 +262,9 @@ img {
     transition: all 0.5s ease-out;
 }
 
-.login-page.login-active {
-    top: 0;
+.login-page h2 {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .login-page .login-container {
@@ -269,12 +313,16 @@ img {
     margin-top: 10px;
 }
 
-.signup-page .close {
+.login-page .close {
     position: absolute;
     top: 0px;
     right: 10px;
     font-size: 1.4rem;
     cursor: pointer;
+}
+
+.login-page.login-active {
+    top: 0;
 }
 
 .signup-page {
@@ -291,8 +339,9 @@ img {
     transition: all 0.5s ease-out;
 }
 
-.signup-page.signup-active {
-    top: 0;
+.signup-page h2 {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .signup-page .signup-container {
@@ -341,52 +390,14 @@ img {
     font-size: 1rem;
 }
 
-.navbar .navbar-menu ul li a {
-    font-size: 1rem;
-    transition: var(--transition);
+.signup-page .close {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
 
-.navbar .navbar-menu     ul li a:hover {
-    color: var(--color-bg2);
-}
-
-.footer {
-    background-color: var(--color-bg1);
-    padding-top: 5rem;
-}
-
-.footer .footer-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5rem;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.footer .footer-container h2 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.footer .footer-container ul li {
-    margin-bottom: 0.7rem;
-}
-
-.footer .footer-container ul li a:hover {
-    text-decoration: underline;
-}
-
-.footer .footer-container .footer-4 .footer-social ul {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-    font-size: 1.2rem;
-}
-
-.footer .copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 0.7rem;
-    font-size: 1rem;
+.signup-page.signup-active {
+    top: 0;
 }

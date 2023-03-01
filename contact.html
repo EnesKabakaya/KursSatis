@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Çevrimiçi Eğitim - İletişim Sayfası</title>
+    <title>Çevrimiçi Eğitim - İletişim</title>
     <meta name="description" content="Yazılım öğrenmek isteyen öğrencilere özel kurslar">
     <meta name="keywords" content="Kurs Yazılım Eğitim Öğrenmek">
     <meta name="author" content="Enes Kabakaya">
@@ -16,90 +16,8 @@
         integrity='sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ=='
         crossorigin='anonymous' />
 </head>
-<style>
-    body {
-        background-image: url("./images/bg-texture.png");
-    }
-</style>
 
 <body>
-    <section class="return-page">
-        <div class="return-icon">
-            <a href="#page-start"><i class="fa-solid fa-arrow-up"></i></a>
-        </div>
-    </section>
-    <section class="cookies">
-        <div class="cookie-container">
-            <div class="cookie-info">
-                <h1 style="margin-top: 10px;">Çerez Kullanımı</h1>
-                <p style="margin-top: 20px;">
-                    Size mümkün olan en iyi çevrimiçi deneyimi sunabilmek ve sunulan içeriği ilgi alanlarınıza göre
-                    düzenlemek için çerezler kullanırız (üçüncü taraf çerezler dahil). “TÜMÜNÜ KABUL ET” üzerine
-                    tıklayarak
-                    toplanan ve okunan verilerin daha ileri seviyede işlenmesini kabul edersiniz.
-                    Çerezlerin kullanımı ve yönetimi hakkında daha fazla bilgi için “TERCİHLERİ ÖZELLEŞTİR” üzerine
-                    tıklayın. TÜMÜNÜ REDDET üzerine tıklayarak, onay gerektiren çerezlerin kullanılmasını reddedersiniz.
-                    Çerez Politikamız hakkında detaylı bilgi almak için bu sayfayı inceleyebilirsiniz.
-                </p>
-            </div>
-            <div class="cookie-button">
-                <button type="button" id="cookie-accept-btn">Kabul Et</button>
-                <button type="button" id="cookie-decline-btn">Reddet</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="login-page">
-        <div class="login-container">
-            <div class="close">
-                <i class="fa-solid fa-xmark" id="login-close-btn"></i>
-            </div>
-            <form action="">
-                <h2>Giriş Yap</h2>
-                <div class="input-box" style="margin-bottom: 35px;">
-                    <label>Mail Adresi</label>
-                    <input type="email" name="" placeholder="Mail Adresinizi Giriniz">
-                </div>
-                <div class="input-box">
-                    <label>Şifreniz</label>
-                    <input type="password" name="" placeholder="Şifrenizi Giriniz">
-                </div>
-                <div class="input-box">
-                    <button type="button" class="button">Giriş Yap</button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <section class="signup-page">
-        <div class="signup-container">
-            <div class="close">
-                <i class="fa-solid fa-xmark" id="signup-close-btn"></i>
-            </div>
-            <form action="">
-                <h2>Kayıt Ol</h2>
-                <div class="input-box">
-                    <label>Adınız</label>
-                    <input type="text" name="" placeholder="Adınızı Giriniz">
-                </div>
-                <div class="input-box">
-                    <label>Soyadınız</label>
-                    <input type="text" name="" placeholder="Soyadınızı Giriniz">
-                </div>
-                <div class="input-box">
-                    <label>Mail Adresiniz</label>
-                    <input type="email" name="" placeholder="Mail Adresinizi Giriniz">
-                </div>
-                <div class="input-box">
-                    <label>Şifreniz</label>
-                    <input type="password" name="" placeholder="Şifrenizi Girinizz">
-                </div>
-                <div class="input-box">
-                    <button type="button" class="button">Kayıt Ol</button>
-                </div>
-            </form>
-        </div>
-    </section>
     <nav class="navbar">
         <div class="navbar-container">
             <div class="logo">
@@ -111,7 +29,7 @@
                     <li><a href="about.html">Hakkımızda</a></li>
                     <li><a href="course.html">Kurslar</a></li>
                     <li><a href="contact.html">İletişim</a></li>
-                    <li style="display: flex; gap: 1rem;" class="account">
+                    <li class="account">
                         <button class="login">Giriş Yap</button>
                         <button class="signup">Kayıt Ol</button>
                     </li>
@@ -121,9 +39,9 @@
     </nav>
     <section class="contact">
         <div class="contact-container">
-            <aside class="contact-info">
+            <div class="contact-info">
                 <div class="contact-img">
-                    <img src="./images/svg/contact.svg" alt="" loading="lazy">
+                    <img src="./images/svg/contact.svg" alt="Hakkımızda Fotoğraf" loading="lazy">
                 </div>
                 <h2>İletişim Bilgileri</h2>
                 <p class="contact-text">
@@ -149,18 +67,18 @@
                         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     </li>
                 </ul>
-            </aside>
-            <aside>
+            </div>
+            <div>
                 <form action="#">
                     <div class="contact-form">
-                        <input type="text" name="#" placeholder="Adınızı Giriniz" required>
-                        <input type="text" name="#" placeholder="Soyadınızı Giriniz" required>
-                        <input type="email" name="#" placeholder="Email Adresinizi Giriniz" required>
-                        <textarea name="#" rows="7" placeholder="Mesajınızı Giriniz" required></textarea>
+                        <input type="text" name="" placeholder="Adınızı Giriniz" required>
+                        <input type="text" name="" placeholder="Soyadınızı Giriniz" required>
+                        <input type="email" name="" placeholder="Email Adresinizi Giriniz" required>
+                        <textarea name="" rows="7" placeholder="Mesajınızı Giriniz" required></textarea>
                         <button class="button">Mesaj Gönder</button>
                     </div>
                 </form>
-            </aside>
+            </div>
         </div>
     </section>
 
@@ -168,7 +86,7 @@
         <div class="footer-container">
             <div class="footer-1">
                 <h2>Çevrimiçi Eğitim</h2>
-                <p style="width: 23ch;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nulla
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nulla
                     dolor culpa.</p>
             </div>
             <div class="footer-2">
@@ -208,6 +126,81 @@
             <p>Copyright &copy; Enes Kabakaya</p>
         </div>
     </footer>
+    <section class="return-page">
+        <div class="return-icon">
+            <a href="#page-start"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </section>
+    <section class="cookies">
+        <div class="cookie-container">
+            <div class="cookie-info">
+                <h1>Çerez Kullanımı</h1>
+                <p>
+                    Size mümkün olan en iyi çevrimiçi deneyimi sunabilmek ve sunulan içeriği ilgi alanlarınıza göre
+                    düzenlemek için çerezler kullanırız (üçüncü taraf çerezler dahil). “TÜMÜNÜ KABUL ET” üzerine
+                    tıklayarak
+                    toplanan ve okunan verilerin daha ileri seviyede işlenmesini kabul edersiniz.
+                    Çerezlerin kullanımı ve yönetimi hakkında daha fazla bilgi için “TERCİHLERİ ÖZELLEŞTİR” üzerine
+                    tıklayın. TÜMÜNÜ REDDET üzerine tıklayarak, onay gerektiren çerezlerin kullanılmasını reddedersiniz.
+                    Çerez Politikamız hakkında detaylı bilgi almak için bu sayfayı inceleyebilirsiniz.
+                </p>
+            </div>
+            <div class="cookie-button">
+                <button type="button" id="cookie-accept-btn">Kabul Et</button>
+                <button type="button" id="cookie-decline-btn">Reddet</button>
+            </div>
+        </div>
+    </section>
+    <section class="login-page">
+        <div class="login-container">
+            <div class="close">
+                <i class="fa-solid fa-xmark" id="login-close-btn"></i>
+            </div>
+            <form action="">
+                <h2>Giriş Yap</h2>
+                <div class="input-box">
+                    <label>Mail Adresi</label>
+                    <input type="email" name="" placeholder="Mail Adresinizi Giriniz">
+                </div>
+                <div class="input-box">
+                    <label>Şifreniz</label>
+                    <input type="password" name="" placeholder="Şifrenizi Giriniz">
+                </div>
+                <div class="input-box">
+                    <button type="button" class="button">Giriş Yap</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="signup-page">
+        <div class="signup-container">
+            <div class="close">
+                <i class="fa-solid fa-xmark" id="signup-close-btn"></i>
+            </div>
+            <form action="">
+                <h2>Kayıt Ol</h2>
+                <div class="input-box">
+                    <label>Adınız</label>
+                    <input type="text" name="" placeholder="Adınızı Giriniz">
+                </div>
+                <div class="input-box">
+                    <label>Soyadınız</label>
+                    <input type="text" name="" placeholder="Soyadınızı Giriniz">
+                </div>
+                <div class="input-box">
+                    <label>Mail Adresiniz</label>
+                    <input type="email" name="" placeholder="Mail Adresinizi Giriniz">
+                </div>
+                <div class="input-box">
+                    <label>Şifreniz</label>
+                    <input type="password" name="" placeholder="Şifrenizi Girinizz">
+                </div>
+                <div class="input-box">
+                    <button type="button" class="button">Kayıt Ol</button>
+                </div>
+            </form>
+        </div>
+    </section>
     <script src="./js/main.js"></script>
 </body>
 
