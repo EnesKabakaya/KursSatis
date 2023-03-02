@@ -414,6 +414,10 @@ html {
 }
 
 @media (max-width: 992px) {
+    .navbar {
+        width: 100%;
+    }
+
     .navbar .navbar-container {
         width: 90%;
     }
@@ -454,18 +458,12 @@ html {
         gap: 1rem;
         padding-left: 90px;
     }
+
+
 }
 
 @media (max-width: 768px) {
-    .navbar .navbar-container {
-        width: 90%;
-        display: flex;
-    }
-
-    .navbar .navbar-container .navbar-hamburger-icon {
-        display: flex;
-        position: absolute;
-        top: 27px;
-        right: -30px;
+    .footer {
+        width: 100%;
     }
 }

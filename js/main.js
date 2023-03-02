@@ -1,6 +1,6 @@
 const freq = document.querySelectorAll(".frequent-card");
 const loginBtn = document.querySelector(".login");
-const loginPage = document.querySelector(".login-page");
+const loginPage = document.querySelector(".login-page ");
 const loginCloseBtn = document.querySelector("#login-close-btn");
 const signupBtn = document.querySelector(".signup");
 const signupPage = document.querySelector(".signup-page");
@@ -60,7 +60,7 @@ freq.forEach(item => {
     item.addEventListener("click", () => {
         item.classList.toggle("open");
 
-        const icon = item.querySelector(".frequent-icon i")
+        const icon = item.querySelector(".freq-icon i")
         if (icon.className === "fa-solid fa-plus") {
             icon.className = "fa-solid fa-minus"
         }
