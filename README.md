@@ -37,6 +37,6 @@ Herhangi bir geri bildiriminiz varsa, lütfen enes.kabakaya@gmail.com adresinden
   
 ## Lisans
 
-Bu lisans adı altında listelenmiştir [MIT](https://choosealicense.com/licenses/mit/)
+Bu lisans adı altında listelenmiştir [MIT LICENCE](https://choosealicense.com/licenses/mit/)
 
   
