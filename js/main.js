@@ -8,6 +8,9 @@ const signupCloseBtn = document.querySelector("#signup-close-btn");
 const cookiePage = document.querySelector(".cookies");
 const cookieAcceptBtn = document.querySelector("#cookie-accept-btn");
 const cookieDeclineBtn = document.querySelector("#cookie-decline-btn");
+const navbarHamburgerBtnOpen = document.querySelector("#navbar-hamburger-btn-open");
+const navbarHamburgerBtnClose = document.querySelector("#navbar-hamburger-btn-close");
+const navbarİtems = document.querySelector(".navbar-items");
 
 setInterval(() => {
     let cookieAccepted = localStorage.getItem("Cookies");
@@ -25,6 +28,17 @@ cookieAcceptBtn.addEventListener("click", () => {
     localStorage.setItem("Cookies", "Accepted");
 })
 
+navbarHamburgerBtnOpen.addEventListener("click", () => {
+    navbarİtems.classList.add("navbar-active");
+    navbarHamburgerBtnClose.style.display = "flex";
+    navbarHamburgerBtnOpen.style.display = "none";
+})
+
+navbarHamburgerBtnClose.addEventListener("click", () => {
+    navbarİtems.classList.remove("navbar-active");
+    navbarHamburgerBtnOpen.style.display = "flex";
+    navbarHamburgerBtnClose.style.display = "none";
+})
 
 loginBtn.addEventListener("click", () => {
     loginPage.classList.add("login-active");

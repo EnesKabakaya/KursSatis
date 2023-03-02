@@ -41,7 +41,7 @@
 
 .category {
     background-color: var(--color-bg1);
-    height: 30rem;
+    height: 28rem;
     padding: 5rem 0;
 }
 
@@ -62,10 +62,6 @@
 }
 
 .category .category-container .category-right {
-    margin-right: 5rem;
-}
-
-.category .category-container .category-right {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem
@@ -73,10 +69,16 @@
 
 .category .category-container .category-right .category-box {
     background-color: var(--color-bg2);
-    border-radius: 2rem;
     transition: var(--transition);
     z-index: 1;
-    padding: 2rem 2rem;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 20px;
 }
 
 .category .category-container .category-left .button {
@@ -106,9 +108,9 @@
 
 
 .category .category-container .category-right .category-box .category-icon {
-    background-color: var(--color-primary);
-    padding: 14px;
-    border-radius: 15px;
+    background-color: var(--color-success);
+    padding: 10px 15px;
+    border-radius: 14px;
 }
 
 .category .category-container .category-right .category-box i {
@@ -116,7 +118,7 @@
 }
 
 .category .category-container .category-right .category-box:nth-child(2) .category-icon {
-    background-color: var(--color-danger);
+    background-color: var(--color-primary);
 }
 
 .category .category-container .category-right .category-box:nth-child(3) .category-icon {
@@ -124,15 +126,15 @@
 }
 
 .category .category-container .category-right .category-box:nth-child(4) .category-icon {
-    background-color: var(--color-warning);
+    background-color: var(--color-danger);
 }
 
 .category .category-container .category-right .category-box:nth-child(5) .category-icon {
-    background-color: var(--color-success);
+    background-color: var(--color-warning);
 }
 
 .category .category-container .category-right .category-box:nth-child(6) .category-icon {
-    background-color: var(--color-primary);
+    background-color: var(--color-danger);
 }
 
 .category .category-container .category-right .category-box h5 {
@@ -154,12 +156,11 @@
 }
 
 .course .course-container {
-    display: flex;
+    display: grid;
     gap: 3rem;
     width: 80%;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .course .course-container .course-card .course-info {
@@ -248,7 +249,8 @@
 
 .frequent .frequent-container .frequent-card h4 {
     font-size: 1rem;
-    line-height: 2.2;
+    line-height: 1.5;
+    width: fit-content;
 }
 
 .frequent .frequent-container .frequent-card p {
@@ -268,10 +270,9 @@
 .testimonial {
     overflow-x: hidden;
     position: relative;
-    margin-bottom: 5rem;
-    width: 80%;
-    margin: 0 auto 2rem;
     padding: 5rem 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .testimonial h2 {
@@ -318,3 +319,49 @@
     top: -1.5rem;
     transform: rotate(45deg);
 }
+
+
+@media (max-width: 992px) {
+    .header {
+        height: 60vh;
+    }
+
+    .header .header-container {
+        width: 90%;
+    }
+
+    .category {
+        height: auto;
+    }
+
+    .category .category-container {
+        flex-direction: column;
+        gap: 3rem;
+        width: 90%;
+    }
+
+    .category .category-container .category-right {
+        grid-template-columns: repeat(3, 0fr);
+        gap: 2rem;
+    }
+
+    .course {
+        margin-top: 0;
+    }
+
+    .course .course-container {
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+
+    .frequent .frequent-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .testimonial {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {}

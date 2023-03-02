@@ -1,6 +1,6 @@
 .about {
-    margin: 5rem;
     padding: 5rem 0;
+    margin: 5rem auto;
 }
 
 .about .about-container .about-left img {
@@ -124,10 +124,33 @@
 .team .team-container .team-member .team-social a {
     padding: 1.3rem;
     font-size: 1rem;
+    color: var(--color-white);
 }
 
 .team .team-container .team-member:hover {
     background-color: transparent;
     border: 1px solid var(--color-primary);
     filter: saturate(1);
+}
+
+@media (max-width:992px) {
+    .about .about-container {
+        flex-direction: column;
+        gap: 0rem;
+        width: 90%;
+    }
+
+    .about .about-container .about-right {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .team .team-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+
+    .team .team-container .team-member {
+        padding: 2rem;
+    }
 }

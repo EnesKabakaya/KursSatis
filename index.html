@@ -25,16 +25,22 @@
                 <h2>Çevrimiçi Eğitim</h2>
             </div>
             <div class="navbar-menu">
-                <ul>
+                <ul class="navbar-items">
                     <li><a href="index.html">AnaSayfa</a></li>
                     <li><a href="about.html">Hakkımızda</a></li>
                     <li><a href="course.html">Kurslar</a></li>
                     <li><a href="contact.html">İletişim</a></li>
-                    <li class="account">
-                        <button class="login">Giriş Yap</button>
-                        <button class="signup">Kayıt Ol</button>
-                    </li>
                 </ul>
+            </div>
+            <div class="navbar-other-button">
+                <div class="account">
+                    <button class="login">Giriş Yap</button>
+                    <button class="signup">Kayıt Ol</button>
+                </div>
+                <div class="navbar-hamburger-icon">
+                    <i id="navbar-hamburger-btn-open" class="fa-solid fa-bars"></i>
+                    <i id="navbar-hamburger-btn-close" class="fa-solid fa-xmark"></i>
+                </div>
             </div>
         </div>
     </nav>
@@ -148,7 +154,7 @@
             <div class="frequent-card">
                 <div class="frequent-icon"><i class="fa-solid fa-plus"></i></div>
                 <div class="frequent-question">
-                    <h4>Benim için doğru olan kursları nasıl öğrenebilirim?</h4>
+                    <h4>Bütün kurslardan Sertifika alabiliyormuyuz?</h4>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati vel nulla alias
                         animi, inventore illo! Odit eius, a repellendus et nisi aut nobis fugit doloremque dolor earum!
@@ -170,7 +176,7 @@
             <article class="frequent-card">
                 <div class="frequent-icon"><i class="fa-solid fa-plus"></i></div>
                 <div class="frequent-question">
-                    <h4>Eğer kursunuzdan birşey öğrenemezsem paramı geri alabiliyormuyum?</h4>
+                    <h4>Bütün kurslardan Sertifika alabiliyormuyuz?</h4>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati vel nulla alias
                         animi, inventore illo! Odit eius, a repellendus et nisi aut nobis fugit doloremque dolor earum!
@@ -181,7 +187,7 @@
             <article class="frequent-card">
                 <div class="frequent-icon"><i class="fa-solid fa-plus"></i></div>
                 <div class="frequent-question">
-                    <h4>Kursa bir kere para verdikten sonra hayatım boyunca sahip oluyormuyum?</h4>
+                    <h4>Bütün kurslardan Sertifika alabiliyormuyuz?</h4>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati vel nulla alias
                         animi, inventore illo! Odit eius, a repellendus et nisi aut nobis fugit doloremque dolor earum!
@@ -192,7 +198,7 @@
             <article class="frequent-card">
                 <div class="frequent-icon"><i class="fa-solid fa-plus"></i></div>
                 <div class="frequent-question">
-                    <h4>Kursu bitirdikten sonra işe başlayacakmıyım?</h4>
+                    <h4>Bütün kurslardan Sertifika alabiliyormuyuz?</h4>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati vel nulla alias
                         animi, inventore illo! Odit eius, a repellendus et nisi aut nobis fugit doloremque dolor earum!
@@ -203,7 +209,7 @@
             <article class="frequent-card">
                 <div class="frequent-icon"><i class="fa-solid fa-plus"></i></div>
                 <div class="frequent-question">
-                    <h4>Ödeme seçenekleri nedir?</h4>
+                    <h4>Bütün kurslardan Sertifika alabiliyormuyuz?</h4>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati vel nulla alias
                         animi, inventore illo! Odit eius, a repellendus et nisi aut nobis fugit doloremque dolor earum!
@@ -214,7 +220,7 @@
             <article class="frequent-card">
                 <div class="frequent-icon"><i class="fa-solid fa-plus"></i></div>
                 <div class="frequent-question">
-                    <h4>Kursa başlamak için gerekli olan gerksinimler nelerdir?</h4>
+                    <h4>Bütün kurslardan Sertifika alabiliyormuyuz?</h4>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati vel nulla alias
                         animi, inventore illo! Odit eius, a repellendus et nisi aut nobis fugit doloremque dolor earum!
@@ -225,7 +231,7 @@
             <article class="frequent-card">
                 <div class="frequent-icon"><i class="fa-solid fa-plus"></i></div>
                 <div class="frequent-question">
-                    <h4>Derslerde anlamadığım yerleri birine sorabilecekmiyim?</h4>
+                    <h4>Bütün kurslardan Sertifika alabiliyormuyuz?</h4>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati vel nulla alias
                         animi, inventore illo! Odit eius, a repellendus et nisi aut nobis fugit doloremque dolor earum!
@@ -363,15 +369,13 @@
                 <ul>
                     <li><a href="tel:+90 555 555 55 55">+90 555 555 55 55</a></li>
                     <li><a href="mailto:deneme@gmail.com">deneme@gmail.com</a></li>
-                </ul>
-                <div class="footer-social">
-                    <ul>
+                    <div class="footer-social">
                         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a></li>
-                    </ul>
-                </div>
+                    </div>
+                </ul>
             </div>
         </div>
         <div class="copyright">
