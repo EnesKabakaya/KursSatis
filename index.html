@@ -241,105 +241,6 @@
             </article>
         </div>
     </section>
-
-    <section class="testimonial mySwiper">
-        <h2>Öğrenci Görüşleri</h2>
-        <div class="testimonial-container swiper-wrapper">
-            <di class="testimonial-box swiper-slide">
-                <div class="testimonial-person">
-                    <img src="./images/person1.webp" alt="Öğrenci" loading="lazy">
-                </div>
-                <div class="testimonial-info">
-                    <h5>Selma Öztürk</h5>
-                    <small>Öğrenci</small>
-                </div>
-                <div class="testimonial-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit similique fugit inventore
-                    libero et, veritatis amet rerum mollitia explicabo?
-                </div>
-            </di>
-            <div class="testimonial-box swiper-slide">
-                <div class="testimonial-person">
-                    <img src="./images/person2.webp" alt="Öğrenci" loading="lazy">
-                </div>
-                <div class="testimonial-info">
-                    <h5>Kemal Sayın</h5>
-                    <small>Öğrenci</small>
-                </div>
-                <div class="testimonial-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit similique fugit inventore
-                    libero et, veritatis amet rerum mollitia explicabo?
-                </div>
-            </div>
-            <div class="testimonial-box swiper-slide">
-                <div class="testimonial-person">
-                    <img src="./images/person3.webp" alt="Öğrenci" loading="lazy">
-                </div>
-                <div class="testimonial-info">
-                    <h5>Mahmut Taş</h5>
-                    <small>Öğrenci</small>
-                </div>
-                <div class="testimonial-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit similique fugit inventore
-                    libero et, veritatis amet rerum mollitia explicabo?
-                </div>
-            </div>
-            <div class="testimonial-box swiper-slide">
-                <div class="testimonial-person">
-                    <img src="./images/person4.webp" alt="Öğrenci" loading="lazy">
-                </div>
-                <div class="testimonial-info">
-                    <h5>Rabia Koyun</h5>
-                    <small>Öğrenci</small>
-                </div>
-                <div class="testimonial-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit similique fugit inventore
-                    libero et, veritatis amet rerum mollitia explicabo?
-                </div>
-            </div>
-            <div class="testimonial-box swiper-slide">
-                <div class="testimonial-person">
-                    <img src="./images/person5.webp" alt="Öğrenci" loading="lazy">
-                </div>
-                <div class="testimonial-info">
-                    <h5>Buse Can</h5>
-                    <small>Öğrenci</small>
-                </div>
-                <div class="testimonial-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit similique fugit inventore
-                    libero et, veritatis amet rerum mollitia explicabo?
-                </div>
-            </div>
-            <div class="testimonial-box swiper-slide">
-                <div class="testimonial-person">
-                    <img src="./images/person6.webp" alt="Öğrenci" loading="lazy">
-                </div>
-                <div class="testimonial-info">
-                    <h5>Selcan Öztürk</h5>
-                    <small>Öğrenci</small>
-                </div>
-                <div class="testimonial-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit similique fugit inventore
-                    libero et, veritatis amet rerum mollitia explicabo?
-                </div>
-            </div>
-            <div class="testimonial-box swiper-slide">
-                <div class="testimonial-person">
-                    <img src="./images/person7.webp" alt="Öğrenci" loading="lazy">
-                </div>
-                <div class="testimonial-info">
-                    <h5>Zehra Kılıç</h5>
-                    <small>Öğrenci</small>
-                </div>
-                <div class="testimonial-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit similique fugit inventore
-                    libero et, veritatis amet rerum mollitia explicabo?
-                </div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </section>
-
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-1">
@@ -377,9 +278,9 @@
                     </div>
                 </ul>
             </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright &copy; Enes Kabakaya</p>
+            <div class="copyright">
+                <p>Copyright &copy; Enes Kabakaya</p>
+            </div>
         </div>
     </footer>
     <section class="return-page">
@@ -400,7 +301,7 @@
                 </div>
                 <div class="input-box">
                     <label>Şifreniz</label>
-                    <input type="password" name="" placeholder="Şifrenizi Giriniz">
+                    <input type="password" name="" autocomplete="off" placeholder="Şifrenizi Giriniz">
                 </div>
                 <div class="input-box">
                     <button type="button" class="button">Giriş Yap</button>
@@ -429,7 +330,7 @@
                 </div>
                 <div class="input-box">
                     <label>Şifreniz</label>
-                    <input type="password" name="" placeholder="Şifrenizi Girinizz">
+                    <input type="password" name="" autocomplete="off" placeholder="Şifrenizi Girinizz">
                 </div>
                 <div class="input-box">
                     <button type="button" class="button">Kayıt Ol</button>
@@ -458,22 +359,6 @@
         </div>
     </section>
     <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "1",
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                600: {
-                    slidesPerView: 2
-                }
-            }
-        });
-    </script>
 </body>
 
 </html>

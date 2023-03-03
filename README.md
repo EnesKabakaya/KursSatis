@@ -31,10 +31,9 @@ Herhangi bir geri bildiriminiz varsa, lütfen enes.kabakaya@gmail.com adresinden
   
 ## Ekran Görüntüleri
 
-![1](https://user-images.githubusercontent.com/111273735/221970466-5eeedd81-3779-45a7-9780-a2eedbf3b700.png)
+[![image](https://r.resimlink.com/ESIcAo2X1.png)](https://resimlink.com/ESIcAo2X1)
 
-![2](https://user-images.githubusercontent.com/111273735/221971733-0819961d-678e-4d52-8e21-0c1400b473a1.png)
-  
+[![image](https://r.resimlink.com/KIOsqRX0Wbt6.png)](https://resimlink.com/KIOsqRX0Wbt6)  
 ## Lisans
 
 Bu lisans adı altında listelenmiştir [MIT LICENCE](https://choosealicense.com/licenses/mit/)

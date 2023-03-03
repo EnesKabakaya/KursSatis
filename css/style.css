@@ -10,29 +10,11 @@
     outline: none;
 }
 
-:root {
-
-    --color-primary: #6c63ff;
-    --color-success: #00bf8e;
-    --color-warning: #f7c94b;
-    --color-danger: #f75842;
-    --color-return: #415292;
-    --color-login-signup: rgba(31, 38, 65, .9);
-    --color-cookie: rgba(66, 72, 144, .9);
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.7);
-    --color-black: #000;
-    --color-bg: #1f2641;
-    --color-bg1: #2e3267;
-    --color-bg2: #424890;
-    --transition: all 400ms ease;
-}
-
 body {
     font-family: "Poppins", sans-serif;
     line-height: 1.5;
-    color: var(--color-white);
-    background-color: var(--color-bg);
+    color: #fff;
+    background-color: #1f2641;
     background-image: url(../images/bg-texture.png);
 }
 
@@ -45,35 +27,35 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--color-bg2);
+    background-color: #424890;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--color-primary);
+    background-color: #6c63ff;
 }
 
 .navbar-scroll {
-    background-color: var(--color-primary);
+    background-color: #6c63ff;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .navbar .navbar-container .account .login.account-btn,
 .navbar .navbar-container .account .signup.account-btn {
-    background-color: var(--color-bg2);
+    background-color: #424890;
 }
 
 .navbar .navbar-container .navbar-menu ul.navbar-active {
-    right: 0;
+    right: 0px;
 }
 
 .navbar {
-    width: 100vw;
     height: 5rem;
+    width: 100vw;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 10;
-    transition: var(--transition);
+    transition: all 400ms ease;
 }
 
 .navbar .navbar-container {
@@ -94,8 +76,8 @@ html {
 
 .navbar .navbar-menu ul li a {
     font-size: 1rem;
-    transition: var(--transition);
-    color: var(--color-white);
+    transition: all 400ms ease;
+    color: #fff;
 }
 
 .navbar .navbar-other-button .navbar-hamburger-icon {
@@ -104,7 +86,7 @@ html {
 }
 
 .navbar ul li a:hover {
-    color: var(--color-bg2);
+    color: #424890;
 }
 
 .navbar .navbar-container .account {
@@ -119,32 +101,40 @@ html {
     max-height: 500px;
     width: 100px;
     height: 40px;
-    background-color: var(--color-primary);
+    background-color: #6c63ff;
     border-radius: 0.50rem;
-    color: var(--color-white);
+    color: #fff;
     cursor: pointer;
     font-size: 1rem;
-    transition: var(--transition);
+    transition: all 400ms ease;
     text-align: center;
 }
 
 .navbar .navbar-other-button .account .login:hover,
 .navbar .navbar-other-button .account .signup:hover {
-    background-color: var(--color-bg2);
-    color: var(--color-primary);
+    background-color: #424890;
+    color: #6c63ff;
 }
 
 .footer {
-    background-color: var(--color-bg1);
-    padding-top: 5rem;
+    background-color: #2e3267;
+    padding: 3rem;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .footer .footer-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     gap: 5rem;
     width: 80%;
     margin: 0 auto;
+    position: relative;
+}
+
+.footer .footer-container .footer-1 p {
+    width: 23ch;
 }
 
 .footer .footer-container h2 {
@@ -157,7 +147,7 @@ html {
 }
 
 .footer .footer-container ul li a {
-    color: var(--color-white);
+    color: #fff;
 }
 
 .footer .footer-container ul li a:hover {
@@ -170,23 +160,26 @@ html {
 }
 
 .footer .copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 0.7rem;
+    position: absolute;
+    bottom: -40px;
     font-size: 1rem;
 }
 
 .return-page {
-    transition: var(--transition);
-    background-color: var(--color-return);
-    color: var(--color-white);
+    position: relative;
+    border: 1px solid #000;
+}
+
+.return-icon {
+    transition: all 400ms ease;
+    background-color: #415292;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
     bottom: 50px;
-    right: -50px;
+    right: -100px;
     font-size: 25px;
     border-radius: 50%;
     width: 50px;
@@ -197,18 +190,18 @@ html {
 }
 
 .return-page .return-icon a {
-    color: var(--color-white);
+    color: #fff;
 }
 
-.return-page.return-page-active {
-    right: 50px;
+.return-icon.return-page-active {
+    right: 10px;
 }
 
 .cookies {
     height: 30vh;
     width: 100%;
     z-index: 5;
-    background-color: var(--color-cookie);
+    background-color: rgba(66, 72, 144, .9);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -216,7 +209,6 @@ html {
     align-items: center;
     justify-content: center;
 }
-
 
 .cookies .cookie-container {
     height: 100%;
@@ -242,17 +234,17 @@ html {
     padding: 20px 100px;
     border: none;
     outline: none;
-    background-color: var(--color-white);
-    color: var(--color-black);
+    background-color: #fff;
+    color: #000;
     cursor: pointer;
     font-size: 1rem;
-    border: 1px solid var(--color-white);
-    transition: var(--transition);
+    border: 1px solid #fff;
+    transition: all 400ms ease;
 }
 
 .cookies .cookie-container .cookie-button button:hover {
     background-color: transparent;
-    color: var(--color-white);
+    color: #fff;
 }
 
 .cookies.cookie-active {
@@ -267,7 +259,7 @@ html {
     height: 100%;
     width: 100%;
     z-index: 11;
-    background-color: var(--color-login-signup);
+    background-color: rgba(31, 38, 65, .9);
     top: -100%;
     left: 0;
     transition: all 0.5s ease-out;
@@ -283,7 +275,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-bg1);
+    background-color: #2e3267;
     width: 440px;
     height: 450px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 13px 27px -5px, rgba(0, 0, 0, 0.2) 0px 8px 16px -8px;
@@ -298,17 +290,17 @@ html {
 
 .login-page .login-container form .input-box .button {
     padding: 15px 15px;
-    background-color: var(--color-danger);
-    color: var(--color-white);
+    background-color: #f75842;
+    color: #fff;
     font-size: 1rem;
     border: 1px solid transparent;
     outline: none;
-    transition: var(--transition);
+    transition: all 400ms ease;
     cursor: pointer;
 }
 
 .login-page .login-container form .input-box .button:hover {
-    border: 1px solid var(--color-white);
+    border: 1px solid #fff;
     background-color: transparent;
 }
 
@@ -318,7 +310,7 @@ html {
     padding: 10px;
     border: none;
     outline: none;
-    background-color: var(--color-bg);
+    background-color: #1f2641;
     color: #fff;
     font-size: 1rem;
     margin-top: 10px;
@@ -344,7 +336,7 @@ html {
     height: 100%;
     width: 100%;
     z-index: 11;
-    background-color: var(--color-login-signup);
+    background-color: rgba(31, 38, 65, .9);
     top: -100%;
     left: 0;
     transition: all 0.5s ease-out;
@@ -360,7 +352,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-bg1);
+    background-color: #2e3267;
     width: 440px;
     height: 550px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 13px 27px -5px, rgba(0, 0, 0, 0.2) 0px 8px 16px -8px;
@@ -375,18 +367,18 @@ html {
 
 .signup-page .signup-container form .input-box .button {
     padding: 15px 10px;
-    background-color: var(--color-danger);
-    color: var(--color-white);
+    background-color: #f75842;
+    color: #fff;
     font-size: 1rem;
     border: 1px solid transparent;
     outline: none;
-    transition: var(--transition);
+    transition: all 400ms ease;
     cursor: pointer;
     margin-top: 20px;
 }
 
 .signup-page .signup-container form .input-box .button:hover {
-    border: 1px solid var(--color-white);
+    border: 1px solid #fff;
     background-color: transparent;
 }
 
@@ -396,7 +388,7 @@ html {
     padding: 10px;
     border: none;
     outline: none;
-    background-color: var(--color-bg);
+    background-color: #1f2641;
     color: #fff;
     font-size: 1rem;
 }
@@ -428,10 +420,10 @@ html {
         position: absolute;
         right: -300px;
         top: 80px;
-        background-color: var(--color-primary);
+        background-color: #6c63ff;
         width: 210px;
         height: 250px;
-        transition: var(--transition);
+        transition: all 400ms ease;
     }
 
     .navbar .navbar-container {
@@ -454,16 +446,44 @@ html {
 
     .footer .footer-container {
         width: 90%;
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        padding-left: 90px;
+        gap: 5rem;
+        padding-left: 50px;
     }
 
-
+    .footer .copyright {
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
 
 @media (max-width: 768px) {
-    .footer {
+    .navbar-container {
+        width: 80%;
+    }
+
+    .navbar .navbar-container .account {
+        display: none;
+        flex-direction: column;
+        position: relative;
+        top: 50px;
+        right: 70px;
+    }
+
+    .navbar .navbar-container .navbar-hamburger-icon {
+        right: 20px;
+    }
+
+    .footer .footer-container {
         width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer .footer-container .copyright {
+        width: 100%;
+        text-align: center;
     }
 }

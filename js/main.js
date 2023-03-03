@@ -60,7 +60,7 @@ freq.forEach(item => {
     item.addEventListener("click", () => {
         item.classList.toggle("open");
 
-        const icon = item.querySelector(".freq-icon i")
+        const icon = item.querySelector(".frequent-icon i")
         if (icon.className === "fa-solid fa-plus") {
             icon.className = "fa-solid fa-minus"
         }
@@ -74,6 +74,6 @@ window.addEventListener("scroll", () => {
     document.querySelector("nav").classList.toggle("navbar-scroll", window.scrollY > 0);
     document.querySelector(".login").classList.toggle("account-btn", window.scrollY > 0);
     document.querySelector(".signup").classList.toggle("account-btn", window.scrollY > 0);
-    document.querySelector(".return-page").classList.toggle("return-page-active", window.scrollY > 50);
+    document.querySelector(".return-icon").classList.toggle("return-page-active", window.scrollY > 50);
 })
 
