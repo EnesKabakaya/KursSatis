@@ -161,13 +161,12 @@ html {
 
 .footer .copyright {
     position: absolute;
-    bottom: -40px;
+    bottom: -20px;
     font-size: 1rem;
 }
 
 .return-page {
     position: relative;
-    border: 1px solid #000;
 }
 
 .return-icon {
