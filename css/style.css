@@ -478,6 +478,30 @@ html {
         right: 70px;
     }
 
+    .login-page .login-container {
+        width: 90%;
+    }
+
+    .login-page .login-container form {
+        width: 90%;
+    }
+
+    .login-page .login-container form .input-box {
+        width: 100%;
+    }
+
+    .signup-page .signup-container {
+        width: 90%;
+    }
+
+    .signup-page .signup-container form {
+        width: 90%;
+    }
+
+    .signup-page .signup-container form .input-box {
+        width: 100%;
+    }
+
     .navbar .navbar-container .navbar-hamburger-icon {
         right: 20px;
     }
