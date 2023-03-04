@@ -17,14 +17,14 @@ setInterval(() => {
     if (cookieAccepted != "Accepted") {
         cookiePage.classList.add("cookie-active");
     }
-}, 2000)
+}, 5000)
 
 cookieDeclineBtn.addEventListener("click", () => {
-    cookiePage.classList.remove("cookie-active");
+    cookiePage.classList.add("cookie-decline");
 })
 
 cookieAcceptBtn.addEventListener("click", () => {
-    cookiePage.classList.remove("cookie-active");
+    cookiePage.classList.add("cookie-decline");
     localStorage.setItem("Cookies", "Accepted");
 })
 

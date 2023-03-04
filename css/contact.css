@@ -168,7 +168,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 662px) {
     .contact {
         height: 170vh;
         display: flex;

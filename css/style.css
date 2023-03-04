@@ -161,7 +161,7 @@ html {
 
 .footer .copyright {
     position: absolute;
-    bottom: -20px;
+    bottom: -44px;
     font-size: 1rem;
 }
 
@@ -248,6 +248,10 @@ html {
 
 .cookies.cookie-active {
     display: flex;
+}
+
+.cookies.cookie-decline {
+    display: none;
 }
 
 .login-page {
@@ -455,9 +459,13 @@ html {
         left: 50%;
         transform: translate(-50%);
     }
+
+    .cookies {
+        height: 35vh;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 662px) {
     .navbar-container {
         width: 80%;
     }
@@ -484,5 +492,33 @@ html {
     .footer .footer-container .copyright {
         width: 100%;
         text-align: center;
+    }
+
+    .cookies {
+        height: 85vh;
+    }
+
+    .cookies .cookie-container {
+        width: 90%;
+        height: 70vh;
+    }
+
+    .cookies .cookie-container .cookie-info {
+        width: 330px;
+    }
+
+    .cookies .cookie-container .cookie-info h1 {
+        margin-bottom: 10px;
+    }
+
+    .cookies .cookie-container .cookie-button {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+
+    .cookies .cookie-container .cookie-button button {
+        width: 100%;
+        margin-top: 5px;
     }
 }

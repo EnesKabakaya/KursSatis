@@ -302,7 +302,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 662px) {
     .header .header-container {
         width: 80%;
         display: grid;
@@ -317,7 +317,7 @@
     }
 
     .header .header-container .header-right img {
-        margin: 0;
+        margin: 25px;
     }
 
     .category .category-container {
