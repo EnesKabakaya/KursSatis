@@ -44,8 +44,12 @@ html {
     background-color: #424890;
 }
 
-.navbar .navbar-container .navbar-menu ul.navbar-active {
-    right: 0px;
+.navbar .navbar-container .navbar-menu ul.navbar-menu-active {
+    right: 5px;
+}
+
+.navbar .navbar-container .navbar-other-button .account.navbar-account-active {
+    right: 5px;
 }
 
 .navbar {
@@ -83,6 +87,13 @@ html {
 .navbar .navbar-other-button .navbar-hamburger-icon {
     display: none;
     font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar .navbar-other-button .navbar-login-signup-btn {
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
 }
 
 .navbar ul li a:hover {
@@ -429,6 +440,27 @@ html {
         transition: all 400ms ease;
     }
 
+    .navbar .navbar-container .navbar-other-button .account {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        right: -300px;
+        top: 80px;
+        background-color: #2e3267;
+        width: 170px;
+        height: 150px;
+        transition: all 400ms ease;
+    }
+
+    .navbar .navbar-other-button .navbar-login-signup-btn {
+        display: flex;
+        position: absolute;
+        top: 29px;
+        right: 50px;
+    }
+
     .navbar .navbar-container {
         display: flex;
         justify-content: space-between;
@@ -440,7 +472,7 @@ html {
         display: flex;
         position: absolute;
         top: 27px;
-        right: -30px;
+        right: 10px;
     }
 
     .navbar .navbar-container .navbar-hamburger-icon #navbar-hamburger-btn-close {
@@ -468,14 +500,28 @@ html {
 @media (max-width: 662px) {
     .navbar-container {
         width: 80%;
+        position: relative;
     }
 
-    .navbar .navbar-container .account {
-        display: none;
+    .navbar .navbar-container .navbar-other-button .account {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        position: relative;
-        top: 50px;
-        right: 70px;
+        position: absolute;
+        right: -300px;
+        top: 80px;
+        background-color: #2e3267;
+        width: 170px;
+        height: 150px;
+        transition: all 400ms ease;
+    }
+
+    .navbar .navbar-other-button .navbar-login-signup-btn {
+        display: flex;
+        position: absolute;
+        top: 29px;
+        right: 60px;
     }
 
     .login-page .login-container {
