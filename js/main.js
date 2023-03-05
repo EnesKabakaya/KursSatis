@@ -13,6 +13,7 @@ const navbarHamburgerBtnClose = document.querySelector("#navbar-hamburger-btn-cl
 const navbarİtems = document.querySelector(".navbar-items");
 const navbarAccountMenu = document.querySelector(".account");
 const navbarAccountBtnOpen = document.querySelector("#navbar-login-signup-btn-open");
+const navbarAccountBtnClose = document.querySelector("#navbar-login-signup-btn-close");
 
 setInterval(() => {
     let cookieAccepted = localStorage.getItem("Cookies");
@@ -43,7 +44,11 @@ navbarHamburgerBtnClose.addEventListener("click", () => {
 })
 
 navbarAccountBtnOpen.addEventListener("click", () => {
-    navbarAccountMenu.classList.toggle("navbar-account-active");
+    navbarAccountMenu.classList.add("navbar-account-active");
+})
+
+navbarAccountBtnClose.addEventListener("click", () => {
+    navbarAccountMenu.classList.remove("navbar-account-active");
 })
 
 loginBtn.addEventListener("click", () => {

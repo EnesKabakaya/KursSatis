@@ -263,17 +263,19 @@
     margin-top: 0.5rem;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1400px) {
     .header {
         height: 60vh;
     }
 
     .header .header-container {
         width: 90%;
+
     }
 
     .category {
         height: auto;
+
     }
 
     .category .category-container {

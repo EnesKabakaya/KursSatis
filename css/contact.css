@@ -142,7 +142,11 @@
     background-color: transparent;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1400px) {
+    .contact {
+        height: 120vh;
+    }
+
     .contact .contact-container {
         height: auto;
         padding: 1rem;
