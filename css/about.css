@@ -140,7 +140,7 @@
     filter: saturate(1);
 }
 
-@media (max-width:1400px) {
+@media only screen and (max-width:1400px) {
     .about {
         width: 100%;
     }
@@ -158,7 +158,7 @@
     }
 
     .about .about-container .about-left img {
-        width: 45   0px;
+        width: 45 0px;
     }
 
     .team .team-container {
@@ -171,7 +171,7 @@
     }
 }
 
-@media (max-width: 662px) {
+@media only screen and (max-width: 662px) {
     .about .about-container {
         display: flex;
         flex-direction: column;

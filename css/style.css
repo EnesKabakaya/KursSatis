@@ -425,7 +425,7 @@ html {
     top: 0;
 }
 
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
     .navbar {
         width: 100%;
     }
@@ -455,9 +455,16 @@ html {
         right: -300px;
         top: 80px;
         background-color: #2e3267;
-        width: 170px;
-        height: 150px;
+        width: 180px;
+        height: 200px;
         transition: all 400ms ease;
+    }
+
+    .navbar .navbar-container .account i {
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: 20px;
     }
 
     .navbar .navbar-other-button .navbar-login-signup-btn {
@@ -503,7 +510,7 @@ html {
     }
 }
 
-@media (max-width: 662px) {
+@media only screen and (max-width: 662px) {
     .navbar-container {
         width: 80%;
         position: relative;
@@ -523,7 +530,7 @@ html {
         transition: all 400ms ease;
     }
 
-    .navbar .navbar-container .navbar-other-button .account i {
+    .navbar .navbar-container .account i {
         position: absolute;
         top: 10px;
         right: 20px;
