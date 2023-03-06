@@ -11,14 +11,14 @@
 
 ## Yükleme 
 
-Aşagıdaki yolları izleyerek indirebilirsiniz.
+Aşağıdaki yolu izleyerek indirebilirsiniz.
 ```bash 
     git clone https://github.com/EnesKabakaya/KursSatis
 ```
 
     
 
-## Desteklendiği Teknolojiler
+## Projenin Yapılgığı Teknolojiler
 
 - Html 5
 - Css 3

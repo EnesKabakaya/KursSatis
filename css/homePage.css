@@ -266,16 +266,15 @@
 @media only screen and (max-width: 1400px) {
     .header {
         height: 60vh;
+        margin: 0;
     }
 
     .header .header-container {
         width: 90%;
-
     }
 
     .category {
         height: auto;
-
     }
 
     .category .category-container {
