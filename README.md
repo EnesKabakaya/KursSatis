@@ -18,7 +18,7 @@ Aşağıdaki yolu izleyerek indirebilirsiniz.
 
     
 
-## Projenin Yapılgığı Teknolojiler
+## Projenin Yapıldığı Teknolojiler
 
 - Html 5
 - Css 3
