@@ -35,7 +35,6 @@ cookieAcceptBtn.addEventListener("click", function () {
 
 function CookieTime(minute) {
     var startCookieTime = minute + 1;
-    console.log(startCookieTime);
     setInterval(() => {
         var date2 = new Date();
         if (date2.getMinutes() > startCookieTime) {
