@@ -14,6 +14,7 @@ const navbarİtems = document.querySelector(".navbar-items");
 const navbarAccountMenu = document.querySelector(".account");
 const navbarAccountBtnOpen = document.querySelector("#navbar-login-signup-btn-open");
 const navbarAccountBtnClose = document.querySelector("#navbar-login-signup-btn-close");
+const date = new Date();
 
 setInterval(() => {
     let cookieAccepted = localStorage.getItem("Cookies");
@@ -26,10 +27,23 @@ cookieDeclineBtn.addEventListener("click", () => {
     cookiePage.classList.add("cookie-decline");
 })
 
-cookieAcceptBtn.addEventListener("click", () => {
+cookieAcceptBtn.addEventListener("click", function () {
     cookiePage.classList.add("cookie-decline");
     localStorage.setItem("Cookies", "Accepted");
+    return CookieTime(date.getMinutes());
 })
+
+function CookieTime(minute) {
+    var startCookieTime = minute + 1;
+    console.log(startCookieTime);
+    setInterval(() => {
+        var date2 = new Date();
+        if (date2.getMinutes() > startCookieTime) {
+            localStorage.removeItem("Cookies");
+        }
+    }, 1000)
+}
+CookieTime();
 
 navbarHamburgerBtnOpen.addEventListener("click", () => {
     navbarİtems.classList.add("navbar-menu-active");
