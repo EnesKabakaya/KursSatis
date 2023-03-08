@@ -425,7 +425,7 @@ html {
     top: 0;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1200px) {
     .navbar {
         width: 100%;
     }
@@ -510,7 +510,7 @@ html {
     }
 }
 
-@media only screen and (max-width: 662px) {
+@media only screen and (max-width: 640px) {
     .navbar-container {
         width: 80%;
         position: relative;

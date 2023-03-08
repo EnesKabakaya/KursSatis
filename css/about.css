@@ -140,7 +140,7 @@
     filter: saturate(1);
 }
 
-@media only screen and (max-width:1400px) {
+@media only screen and (max-width:1200px) {
     .about {
         width: 100%;
     }
@@ -171,7 +171,7 @@
     }
 }
 
-@media only screen and (max-width: 662px) {
+@media only screen and (max-width: 640px) {
     .about .about-container {
         display: flex;
         flex-direction: column;
